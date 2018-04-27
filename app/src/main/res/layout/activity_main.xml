@@ -10,39 +10,113 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:weightSum="2"
         android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:weightSum="2"
+            android:orientation="horizontal"
             android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"></LinearLayout>
 
-            <TextView
-                android:id="@+id/txt_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
-                android:text="dd/mm/yyyy HH:mm:ss"
-                android:textColor="@color/colorBlack"
-                android:textSize="30sp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_height="match_parent">
 
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btn_Logout"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_margin="5dp"
+                    android:text="Visitor Management System"
+                    android:gravity="center"
+                    android:layout_height="0dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:paddingLeft="20dp"
+                    android:background="@color/colorNumSave"
+                    android:layout_margin="5dp"
+                    android:text="Mr.Maroot Khaijarapun"
 
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginRight="19dp"
-                android:layout_toLeftOf="@+id/txt_date"
-                android:layout_toStartOf="@+id/txt_date"
-                android:drawableLeft="@drawable/ic_logout_black_96dp"
-                android:text="LOGOUT"
-                android:padding="10dp"
-                android:textSize="20sp" />
+                    android:textSize="25sp"
+                    android:gravity="center"
 
-        </RelativeLayout>
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="dd/mm/yyyy HH:mm:ss"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_Logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="21dp"
+                    android:layout_toLeftOf="@+id/txt_date"
+                    android:layout_toStartOf="@+id/txt_date"
+                    android:drawableLeft="@drawable/ic_logout_48"
+                    android:padding="10dp"
+                    android:text="LOGOUT"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_Import_Export"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/btn_Logout"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btn_Logout"
+                    android:layout_toStartOf="@+id/btn_Logout"
+                    android:drawableLeft="@drawable/ic_import_export_black_48"
+                    android:padding="10dp"
+                    android:text="Import
+/Export"
+                    android:textSize="15sp" />
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
 
 
     </LinearLayout>
@@ -357,25 +431,25 @@
                 android:weightSum="2">
 
 
-                <android.support.v7.widget.AppCompatButton
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/btn_in"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
                     android:layout_weight="0.5"
                     android:background="#0091EA"
                     android:text="เข้า (In)"
-                    android:textColor="@color/colorNumWhite"
-                    android:textSize="25sp"></android.support.v7.widget.AppCompatButton>
+                    android:textSize="25sp"></com.gc.materialdesign.views.ButtonRectangle>
 
-                <android.support.v7.widget.AppCompatButton
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/btn_out"
                     android:layout_width="0dp"
                     android:layout_marginLeft="25dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:background="#E65100"
-                    android:textColor="#ffffff"
                     android:text="ออก (Out)"
-                    android:textSize="25sp"></android.support.v7.widget.AppCompatButton>
+                    android:textSize="25sp"></com.gc.materialdesign.views.ButtonRectangle>
 
                 <TextView
 
