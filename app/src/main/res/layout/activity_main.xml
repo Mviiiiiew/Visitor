@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cit.visitormanagementsystem.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="dd/mm/yyyy HH:mm:ss"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_Logout"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="19dp"
+                android:layout_toLeftOf="@+id/txt_date"
+                android:layout_toStartOf="@+id/txt_date"
+                android:drawableLeft="@drawable/ic_logout_black_96dp"
+                android:text="LOGOUT"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#137C59"
+                android:gravity="center"
+                android:text="เข้า"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#137C59"
+                android:gravity="center"
+                android:text="ออก"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="50dp"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1.5"
+                    android:background="@color/colorTeal"
+
+                    android:text="ติดต่อบุคคล"
+                    android:textColor="@color/colorNumSaveText"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@color/colorTeal"
+
+                    android:text="ส่งของ"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="50dp"
+                    android:textSize="40sp"
+                    android:layout_marginRight="50dp"
+                    android:textColor="@color/colorNumSaveText"
+
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@color/colorTeal"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="50dp"
+                    android:textSize="40sp"
+                    android:layout_marginRight="50dp"
+                    android:text="ผู้รับเหมา"
+                    android:textColor="@color/colorNumSaveText"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@color/colorTeal"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="50dp"
+                    android:textSize="40sp"
+                    android:text="ฝ่ายขาย"
+                    android:layout_marginRight="50dp"
+                    android:textColor="@color/colorNumSaveText"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.5"
+                    android:background="#0091EA"
+                    android:text="เข้า (In)"
+                    android:textColor="@color/colorNumWhite"
+                    android:textSize="25sp"></android.support.v7.widget.AppCompatButton>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#E65100"
+                    android:textColor="#ffffff"
+                    android:text="ออก (Out)"
+                    android:textSize="25sp"></android.support.v7.widget.AppCompatButton>
+
+                <TextView
+
+                    android:background="#FF8F00"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+
+                    android:gravity="center"
+                    android:text="สรุป"
+                    android:textSize="50sp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:background="#FF8F00"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNumSave"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorNumSaveText"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
