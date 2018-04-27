@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_num_size_car_license">50sp</dimen>
+</resources>
