@@ -79,6 +79,8 @@ public class CarLicenseActivity extends AppCompatActivity implements View.OnClic
 
         txt_date.setText(date);
 
+        
+
 
 
         btn_0.setRippleSpeed(35);
