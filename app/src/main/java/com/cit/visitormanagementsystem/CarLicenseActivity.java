@@ -17,6 +17,10 @@ import android.widget.Toast;
 
 import com.gc.materialdesign.views.ButtonRectangle;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class CarLicenseActivity extends AppCompatActivity implements View.OnClickListener {
     Button btn_Back;
     ButtonRectangle btn_0;
@@ -36,6 +40,8 @@ public class CarLicenseActivity extends AppCompatActivity implements View.OnClic
     ButtonRectangle btn_Alphabet;
     EditText edit_Carlicense;
     String Carlicense;
+    Button btn_ok;
+    TextView txt_date;
 
 
     @Override
@@ -47,6 +53,10 @@ public class CarLicenseActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void initInstances() {
+
+        DateFormat df = new SimpleDateFormat(" d MMM yyyy, HH:mm");
+        String date = df.format(Calendar.getInstance().getTime());
+
         btn_Back = (Button) findViewById(R.id.btn_Back);
         btn_0 = (ButtonRectangle) findViewById(R.id.btn_0);
         btn_1 = (ButtonRectangle) findViewById(R.id.btn_1);
@@ -64,6 +74,12 @@ public class CarLicenseActivity extends AppCompatActivity implements View.OnClic
         btn_Spacebar = (ButtonRectangle) findViewById(R.id.btn_Spacebar);
         btn_Alphabet = (ButtonRectangle) findViewById(R.id.btn_Alphabet);
         edit_Carlicense = (EditText) findViewById(R.id.edit_Carlicense);
+        btn_ok= (Button) findViewById(R.id.btn_ok);
+        txt_date= (TextView) findViewById(R.id.txt_date);
+
+        txt_date.setText(date);
+
+
 
         btn_0.setRippleSpeed(35);
         btn_1.setRippleSpeed(35);
@@ -99,7 +115,8 @@ public class CarLicenseActivity extends AppCompatActivity implements View.OnClic
         btn_Spacebar.setOnClickListener(this);
         btn_Alphabet.setOnClickListener(this);
         edit_Carlicense.setOnClickListener(this);
-
+        btn_Alphabet.setOnClickListener(this);
+        btn_ok.setOnClickListener(this);
 
 
 
@@ -181,8 +198,23 @@ public class CarLicenseActivity extends AppCompatActivity implements View.OnClic
         }
         else if(btn_Alphabet == view){
 
+            openDialog(edit_Carlicense.getText().toString());
+
         }else if(edit_Carlicense == view){
             openDialog(edit_Carlicense.getText().toString());
+
+
+        }else if(btn_ok == view){
+            String mCarlicense = edit_Carlicense.getText().toString().replace(" ", "");
+          if( mCarlicense.equals("") ) {
+              Toast.makeText(getApplicationContext(), "กรุณาใส่ทะเบียนรถ", Toast.LENGTH_LONG).show();
+          }else{
+
+              Intent intent  = new Intent(this,ConcludeActivity.class);
+              startActivity(intent);
+
+          }
+
 
 
         }
