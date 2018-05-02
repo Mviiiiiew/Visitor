@@ -75,7 +75,8 @@ public class CarLicenseActivity extends AppCompatActivity implements View.OnClic
         btn_Alphabet = (ButtonRectangle) findViewById(R.id.btn_Alphabet);
         edit_Carlicense = (EditText) findViewById(R.id.edit_Carlicense);
         btn_ok= (Button) findViewById(R.id.btn_ok);
-        txt_date= (TextView) findViewById(R.id.txt_date);        txt_date.setText(date);
+        txt_date= (TextView) findViewById(R.id.txt_date);
+        txt_date.setText(date);
 
 
 
