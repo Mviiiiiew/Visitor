@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cit.visitormanagementsystem">
-    <uses-feature android:name="android.hardware.camera.external" android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.camera.external"
+        android:required="true" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.hardware.camera.autofocus" />
@@ -26,7 +29,9 @@
         <activity
             android:name=".CarLicenseActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
-        <activity android:name=".ConcludeActivity"></activity>
+        <activity android:name=".ConcludeActivity" />
+        <activity android:name=".Main2Activity" />
+
     </application>
 
 </manifest>

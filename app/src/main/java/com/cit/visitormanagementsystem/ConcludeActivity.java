@@ -2,24 +2,17 @@ package com.cit.visitormanagementsystem;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.Arrays;
-import java.util.List;
 
 public class ConcludeActivity extends AppCompatActivity implements View.OnClickListener {
     int[] IMAGES = {R.drawable.ic_account_circle_black_24dp,R.drawable.ic_logout_48,R.drawable.ic_account_circle_black_24dp,
@@ -75,8 +68,8 @@ public class ConcludeActivity extends AppCompatActivity implements View.OnClickL
             startActivity(intent);
 
         }else if(view == btn_camera1){
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            startActivityForResult(intent,0);
+            Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+            startActivity(intent);
 
         }
 

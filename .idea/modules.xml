@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VisitorManagementSystem.iml" filepath="$PROJECT_DIR$/VisitorManagementSystem.iml" />
+      <module fileurl="file://C:\Users\MAN\AndroidStudioProjects\Visitorz\VisitorManagementSystem.iml" filepath="C:\Users\MAN\AndroidStudioProjects\Visitorz\VisitorManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Visitorz.iml" filepath="$PROJECT_DIR$/Visitorz.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libuvccamera/libuvccamera.iml" filepath="$PROJECT_DIR$/libuvccamera/libuvccamera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libuvccamera-release/libuvccamera-release.iml" filepath="$PROJECT_DIR$/libuvccamera-release/libuvccamera-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opencv/opencv.iml" filepath="$PROJECT_DIR$/opencv/opencv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usbCameraCommon-release/usbCameraCommon-release.iml" filepath="$PROJECT_DIR$/usbCameraCommon-release/usbCameraCommon-release.iml" />
     </modules>
   </component>
 </project>
